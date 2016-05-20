@@ -2,6 +2,6 @@
 # IDE files    #
 ################
 .idea/**
-.graddle/**
+.gradle/**
 **/build/
 *.iml

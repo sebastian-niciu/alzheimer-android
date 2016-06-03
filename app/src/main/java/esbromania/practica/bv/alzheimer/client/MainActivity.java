@@ -13,6 +13,7 @@ import android.view.View;
 import esbromania.practica.bv.alzheimer.client.api.model.Greeting;
 import esbromania.practica.bv.alzheimer.client.connector.HttpRequestTask;
 import esbromania.practica.bv.alzheimer.client.connector.OnOperationCompleted;
+import esbromania.practica.bv.alzheimer.client.fragment.LocationRequestActivity;
 import esbromania.practica.bv.alzheimer.client.fragment.PlaceholderFragment;
 
 public class MainActivity extends AppCompatActivity implements OnOperationCompleted  {
@@ -45,7 +46,7 @@ public  void onClickButton(View v){
         return true;
     }
 
-//
+
 //public void onClickButtonListener(){
 //    button2 = (Button) findViewById(R.id.button2);
 //    button2.setOnClickListener(new View.OnClickListener(){
@@ -70,7 +71,7 @@ public  void onClickButton(View v){
             return true;
         }
 //        if( id == R.id.menu_register){
-//            Intent intent = new Intent (this, .class); //RegisterActivity
+//            Intent intent = new Intent (this, RelationActivity.class); //RegisterActivity
 //            startActivity(intent);
 //            return  true;
 //        }else
@@ -79,12 +80,12 @@ public  void onClickButton(View v){
             startActivity(intent);
             return true;
         }
-//        else
-//        if(id == R.id.menu_location){
-//            Intent intent = new Intent(this, .class); //LocationRequestActivity
-//            startActivity(intent);
-//            return true;
-//        }
+        else
+        if(id == R.id.menu_location){
+            Intent intent = new Intent(this, LocationRequestActivity.class); //LocationRequestActivity
+            startActivity(intent);
+            return true;
+        }
 
 
             return super.onOptionsItemSelected(item);

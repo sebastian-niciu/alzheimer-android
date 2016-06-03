@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item android:id="@+id/action_menu"
+        android:title="Menu"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+
+    <menu>
+        <item
+            android:id="@+id/menu_register"
+            android:title="Regiter"/>
+        <item
+            android:id="@+id/menu_relation"
+            android:title="Relation"/>
+        <item
+            android:id="@+id/menu_location"
+            android:title="Location"/>
+
+    </menu>
+
+        </item>
+</menu>

@@ -2,12 +2,10 @@ package esbromania.practica.bv.alzheimer.client.connector;
 
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.TextView;
 
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
-import esbromania.practica.bv.alzheimer.client.R;
 import esbromania.practica.bv.alzheimer.client.api.model.Greeting;
 
 /**
@@ -38,8 +36,5 @@ public class HttpRequestTask extends AsyncTask<Void, Void, Greeting> {
         return null;
     }
 
-    @Override
-    protected void onPostExecute(Greeting greeting) {
-        listener.onGetResponse(greeting);
-    }
+
 }

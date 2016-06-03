@@ -8,6 +8,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="esbromania.practica.bv.alzheimer.client.MainActivity">
+    tools:context="esbromania.practica.bv.alzheimer.client.MainActivity"
+    android:background="@drawable/image"
+    >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="  \n   WELCOME ! "
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 </RelativeLayout>

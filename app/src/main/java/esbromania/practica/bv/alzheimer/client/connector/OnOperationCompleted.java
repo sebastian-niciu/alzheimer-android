@@ -8,4 +8,6 @@ import esbromania.practica.bv.alzheimer.client.api.model.Greeting;
 public interface OnOperationCompleted {
 
     void onGetResponse(Greeting greeting);
+
+    void onGetResponse(String message);
 }
